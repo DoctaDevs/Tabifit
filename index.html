@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabifit</title>
+    <!-- ESTILOS GENERALES -->
+    <style>
+    
+    </style>
+    <!-- FIN ESTILOS GENERALES -->
+</head>
+<body>
+    <!-- PANTALLAS -->
+    <tabifit-screen id="bienvenida">
+        <tabifit-logo>
+        <tabifit-button>Comenzar</tabifit-button>
+    </tabifit-screen>
+    <!-- FIN PANTALLAS -->
+
+    <!-- PRESENTACIÓN COMPONENTES -->
+    <template id="tabifit-screen">
+        <style></style>
+    </template>
+
+    <template ...></template>
+    <!-- FIN DE PRESENTACIÓN COMPONENTES -->
+
+    <!-- JAVASCRIPT COMPONENTES -->
+    <script>
+        class TabifitScreen extends HTMLElement {}
+        class TabifitLogo extends HTMLElement {}
+
+        customElements.define("tabifit-screen", TabifitScreen);
+        customElements.define("tabifit-logo", TabifitLogo);
+    </script>
+    <!-- FIN JAVASCRIPT COMPONENTES -->
+
+    <!-- JAVASCRIPT APLICACION -->
+    <script>
+
+    </script>
+    <!-- FIN JAVASCRIPT APLICACION -->
+</body>
+</html>
