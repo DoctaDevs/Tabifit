@@ -13,8 +13,8 @@
 <body>
     <!-- PANTALLAS -->
     <tabifit-screen id="bienvenida">
-        <tabifit-logo>
-        <tabifit-button>Comenzar</tabifit-button>
+        <tabifit-logo></tabifit-logo>
+        <tabifit-botoncontexto>Comenzar</tabifit-botoncontexto>
     </tabifit-screen>
     <!-- FIN PANTALLAS -->
 
@@ -22,23 +22,24 @@
     <template id="tabifit-screen">
         <style></style>
     </template>
-
-    <template ...></template>
+    <template id="tabifit-botoncontexto">
+        <button><slot>Botón</slot></button>
+    </template>
+    <template></template>
     <!-- FIN DE PRESENTACIÓN COMPONENTES -->
 
     <!-- JAVASCRIPT COMPONENTES -->
+    <script src="utilidades.js"></script>
     <script>
         class TabifitScreen extends HTMLElement {}
         class TabifitLogo extends HTMLElement {}
-
         customElements.define("tabifit-screen", TabifitScreen);
         customElements.define("tabifit-logo", TabifitLogo);
     </script>
+     <script src="tabifit-botoncontexto/component.js"></script>
     <!-- FIN JAVASCRIPT COMPONENTES -->
-
     <!-- JAVASCRIPT APLICACION -->
     <script>
-
     </script>
     <!-- FIN JAVASCRIPT APLICACION -->
 </body>
