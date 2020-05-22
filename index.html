@@ -14,6 +14,9 @@
     <!-- PANTALLAS -->
     <tabifit-screen id="bienvenida">
         <tabifit-logo></tabifit-logo>
+        <!--agregue tabifit-botonConIcono y su i class Cristopher Perez-->
+        <tabifit-botonconiconoizquierdo><i class="fas fa-chevron-left"></i></tabifit-botonconiconoizquierdo>
+        <!--agregue tabifit-botonConIcono y su i class Cristopher Perez-->
         <tabifit-botoncontexto>Comenzar</tabifit-botoncontexto>
     </tabifit-screen>
     <!-- FIN PANTALLAS -->
@@ -21,6 +24,9 @@
     <!-- PRESENTACIÓN COMPONENTES -->
     <template id="tabifit-screen">
         <style></style>
+    </template>
+    <template id="tabifit-botonconiconoizquierdo">
+        <button><slot>boton</slot></button>
     </template>
     <template id="tabifit-botoncontexto">
         <button><slot>Botón</slot></button>
@@ -39,10 +45,13 @@
         customElements.define("tabifit-screen", TabifitScreen);
         customElements.define("tabifit-logo", TabifitLogo);
     </script>
-     <script src="tabifit-botoncontexto/component.js"></script>
+     
      <script src="EjercicioActual/EjActual.js"></script>
      
+    <script src="tabifit-botonconicono/componente.js"></script>
+    <script src="tabifit-botoncontexto/component.js"></script>
     <!-- FIN JAVASCRIPT COMPONENTES -->
+
     <!-- JAVASCRIPT APLICACION -->
     <script>
     </script>
