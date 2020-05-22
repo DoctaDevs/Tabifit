@@ -15,7 +15,7 @@
     <tabifit-screen id="bienvenida">
         <tabifit-logo></tabifit-logo>
         <!--agregue tabifit-botonConIcono y su i class Cristopher Perez-->
-        <tabifit-BotonConIconoIzquierdo><i class="fas fa-chevron-left"></i></tabifit-BotonConIconoIzquierdo>
+        <tabifit-botonconiconoizquierdo><i class="fas fa-chevron-left"></i></tabifit-botonconiconoizquierdo>
         <!--agregue tabifit-botonConIcono y su i class Cristopher Perez-->
         <tabifit-botoncontexto>Comenzar</tabifit-botoncontexto>
     </tabifit-screen>
@@ -25,13 +25,13 @@
     <template id="tabifit-screen">
         <style></style>
     </template>
-    <template id="tabifit-BotonConIconoIzquierdo">
+    <template id="tabifit-botonconiconoizquierdo">
         <button><slot>boton</slot></button>
     </template>
     <template id="tabifit-botoncontexto">
         <button><slot>Botón</slot></button>
     </template>
-    <template ...></template>
+    <template></template>
     <!-- FIN DE PRESENTACIÓN COMPONENTES -->
 
     <!-- JAVASCRIPT COMPONENTES -->
@@ -42,7 +42,7 @@
         customElements.define("tabifit-screen", TabifitScreen);
         customElements.define("tabifit-logo", TabifitLogo);
     </script>
-    <script src="tabifit-BotonConIcono/componente.js"></script>
+    <script src="tabifit-botonconicono/componente.js"></script>
     <script src="tabifit-botoncontexto/component.js"></script>
     <!-- FIN JAVASCRIPT COMPONENTES -->
 
