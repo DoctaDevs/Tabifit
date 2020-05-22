@@ -13,8 +13,11 @@
 <body>
     <!-- PANTALLAS -->
     <tabifit-screen id="bienvenida">
-        <tabifit-logo>
-        <tabifit-button>Comenzar</tabifit-button>
+        <tabifit-logo></tabifit-logo>
+        <!--agregue tabifit-botonConIcono y su i class Cristopher Perez-->
+        <tabifit-BotonConIconoIzquierdo><i class="fas fa-chevron-left"></i></tabifit-BotonConIconoIzquierdo>
+        <!--agregue tabifit-botonConIcono y su i class Cristopher Perez-->
+
     </tabifit-screen>
     <!-- FIN PANTALLAS -->
 
@@ -22,11 +25,18 @@
     <template id="tabifit-screen">
         <style></style>
     </template>
-
+        <!--agrego desde aca Cristopher Perez-->
+    <template id="tabifit-BotonConIconoIzquierdo">
+        <button><slot>boton</slot></button>
+    </template>
+        <!--agrego hasta aca Cristopher Perez-->
     <template ...></template>
     <!-- FIN DE PRESENTACIÓN COMPONENTES -->
 
     <!-- JAVASCRIPT COMPONENTES -->
+        <!--Agregue utilidades Cristopher Perez-->
+    <script src="utilidades.js"></script>
+        <!--Agregue utilidades Cristopher Perez-->
     <script>
         class TabifitScreen extends HTMLElement {}
         class TabifitLogo extends HTMLElement {}
@@ -34,6 +44,9 @@
         customElements.define("tabifit-screen", TabifitScreen);
         customElements.define("tabifit-logo", TabifitLogo);
     </script>
+        <!--Agregue desde aca componente nvo Cristopher Perez-->
+    <script src="tabifit-BotonConIcono/componente.js"></script>
+        <!--Agregue hasta aca componente nvo Cristopher Perez-->
     <!-- FIN JAVASCRIPT COMPONENTES -->
 
     <!-- JAVASCRIPT APLICACION -->
