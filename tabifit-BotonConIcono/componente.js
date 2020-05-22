@@ -1,7 +1,7 @@
 class BotonConIcono extends HTMLElement {
     constructor(){
         super()
-        cargarTemplate("#tabifit-BotonConIconoIzquierdo", this)
+        cargarTemplate("#tabifit-botonconiconoizquierdo", this)
     }
 }
-customElements. define("boton-con-icono", BotonConIcono)
+customElements.define("tabifit-botonconiconoizquierdo", BotonConIcono)
