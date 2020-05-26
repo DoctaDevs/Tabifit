@@ -5,3 +5,10 @@ class BotonConIcono extends HTMLElement {
     }
 }
 customElements.define("tabifit-botonconiconoizquierdo", BotonConIcono)
+class BotonConIcono extends HTMLElement {
+    constructor(){
+        super()
+        cargarTemplate("#tabifit-botonconiconoderecho", this)
+    }
+}
+customElements.define("tabifit-botonconiconoderecho", BotonConIcono)
