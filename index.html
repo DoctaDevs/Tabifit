@@ -16,6 +16,7 @@
     <tabifit-screen id="bienvenida">
         <tabifit-logo></tabifit-logo>
         <tabifit-botonconiconoizquierdo><i class="fas fa-chevron-left"></i></tabifit-botonconiconoizquierdo>
+        <tabifit-botonconiconoderecho><i class="fas fa-chevron-left"></i></tabifit-botonconiconoderecho>
         <tabifit-botoncontexto>Comenzar</tabifit-botoncontexto>
     </tabifit-screen>
     <!-- FIN PANTALLAS -->
@@ -25,6 +26,9 @@
         <style></style>
     </template>
     <template id="tabifit-botonconiconoizquierdo">
+        <button><slot>boton</slot></button>
+    </template>
+    <template id="tabifit-botonconiconoderecho">
         <button><slot>boton</slot></button>
     </template>
     <template id="tabifit-botoncontexto">
