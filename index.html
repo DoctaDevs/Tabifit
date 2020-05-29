@@ -19,6 +19,17 @@
         <tabifit-botonconiconoderecho><i class="fas fa-chevron-right"></i></tabifit-botonconiconoderecho>
         <tabifit-botoncontexto>Comenzar</tabifit-botoncontexto>
     </tabifit-screen>
+    <!-- TODOS LOS BOTONTES USANDO UN MISMO TEMPLATE
+        <tabifit-boton>
+            <label slot="etiqueta">Comenzar</label>
+        </tabifit-boton>
+        <tabifit-boton>
+            <label slot="icono-izquierdo"><i class="fas fa-chevron-left"></label>
+        </tabifi-boton>
+        <tabifit-boton>
+            <label slot="icono-derecho"><i class="fas fa-chevron-right"></label>
+        </tabifit-boton>
+    -->
     <!-- FIN PANTALLAS -->
 
     <!-- PRESENTACIÓN COMPONENTES -->
@@ -34,6 +45,15 @@
     <template id="tabifit-botoncontexto">
         <button><slot>Botón</slot></button>
     </template>
+    <!-- TODOS LOS BOTONES EN UN SOLO TEMPLATE
+    <template id="tabifit-boton">
+        <button>
+            <slot name="icono-izquierdo"></slot>
+            <slot name="etiqueta"></slot>
+            <slot name="icono-derecho"></slot>
+        </button>
+    </template>
+    -->
     <template></template>
     <!-- FIN DE PRESENTACIÓN COMPONENTES -->
 
