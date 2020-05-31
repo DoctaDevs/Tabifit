@@ -6,7 +6,7 @@
     <title>Tabifit</title>
     <!-- ESTILOS GENERALES -->
     <style>
-    
+        
     </style>
     <!-- FIN ESTILOS GENERALES -->
 </head>
@@ -14,9 +14,7 @@
     <!-- PANTALLAS -->
     <tabifit-screen id="bienvenida">
         <tabifit-logo></tabifit-logo>
-        <!--agregue tabifit-botonConIcono y su i class Cristopher Perez-->
         <tabifit-botonconiconoizquierdo><i class="fas fa-chevron-left"></i></tabifit-botonconiconoizquierdo>
-        <!--agregue tabifit-botonConIcono y su i class Cristopher Perez-->
         <tabifit-botoncontexto>Comenzar</tabifit-botoncontexto>
     </tabifit-screen>
     <!-- FIN PANTALLAS -->
@@ -31,7 +29,12 @@
     <template id="tabifit-botoncontexto">
         <button><slot>Botón</slot></button>
     </template>
-    <template></template>
+    <template id="tabifit-estado">
+       <div> 
+            <slot name="titulo"></slot>
+            <slot name="numero"></slot>  
+        </div> 
+    </template>
     <!-- FIN DE PRESENTACIÓN COMPONENTES -->
 
     <!-- JAVASCRIPT COMPONENTES -->
@@ -44,6 +47,7 @@
     </script>
     <script src="tabifit-botonconicono/componente.js"></script>
     <script src="tabifit-botoncontexto/component.js"></script>
+    <script src="Tabifit-Estado/component.js"></script>
     <!-- FIN JAVASCRIPT COMPONENTES -->
 
     <!-- JAVASCRIPT APLICACION -->
